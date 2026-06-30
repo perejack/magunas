@@ -637,7 +637,7 @@ function PaymentScreen({ onPay, onBack }: { onPay: (session: PaymentSession) => 
       const result = await initiatePaymentFn({
         data: {
           phoneNumber: phone,
-          amount: 10,
+          amount: 129,
           description: "Refundable interview processing fee",
           referencePrefix: "MAGUNAS",
         },
@@ -668,7 +668,7 @@ function PaymentScreen({ onPay, onBack }: { onPay: (session: PaymentSession) => 
         <div className="p-6 sm:p-10">
           <div className="rounded-3xl brand-gradient text-white text-center p-8 shadow-orange">
             <div className="text-xs font-bold uppercase tracking-widest opacity-80">Processing Fee</div>
-            <div className="mt-2 text-5xl sm:text-6xl font-black">KES 10</div>
+            <div className="mt-2 text-5xl sm:text-6xl font-black">KES 129</div>
             <div className="mt-2 inline-flex items-center gap-1 text-xs font-bold bg-white/20 backdrop-blur rounded-full px-3 py-1">
               💯 100% Refundable on Attendance
             </div>
@@ -702,7 +702,7 @@ function PaymentScreen({ onPay, onBack }: { onPay: (session: PaymentSession) => 
             onClick={handlePay}
             className="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-[color:var(--brand-green)] hover:bg-[color:var(--brand-green-dark)] px-8 py-4 text-lg font-black text-white shadow-glow hover:scale-[1.01] transition-all disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
           >
-            {isProcessing ? "Requesting M-Pesa Prompt..." : "Pay KES 10 with M-Pesa"}
+            {isProcessing ? "Requesting M-Pesa Prompt..." : "Pay KES 129 with M-Pesa"}
           </button>
 
           <div className="mt-4 flex items-center justify-center gap-4 text-xs text-muted-foreground">
@@ -869,7 +869,7 @@ function SuccessScreen({
 
           <div className="mt-8 rounded-2xl border-2 border-dashed border-[color:var(--brand-orange)]/40 bg-[color:var(--brand-orange)]/5 p-6">
             <div className="text-xs font-bold uppercase tracking-widest text-[color:var(--brand-orange)]">Your Refund Code</div>
-            <p className="text-xs text-muted-foreground mt-1">Present this on interview day to claim your KES 10 refund</p>
+            <p className="text-xs text-muted-foreground mt-1">Present this on interview day to claim your KES 129 refund</p>
             <div ref={codeRef} className="mt-4 text-2xl sm:text-3xl font-black font-mono text-[color:var(--brand-green-dark)] tracking-wider select-all">
               {refundCode}
             </div>
